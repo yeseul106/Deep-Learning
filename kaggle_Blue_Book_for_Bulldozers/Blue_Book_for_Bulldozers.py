@@ -289,12 +289,14 @@ print(Y.shape)
 '''''''''''''keras NN 모델 구현하기'''''''''''''
 from keras.models import Sequential
 from keras.layers import Dense, Dropout
-import kerasㄴㄴㄴㄴㄴ
+import keras
 import tensorflow as tf
 from keras.callbacks import EarlyStopping
 
 X_train, X_test, Y_train, Y_test = train_test_split(X, Y, test_size=0.3, random_state=seed)
 
+
+'''은닉층 4개 => loss 값 낮게 나옴'''
 model = Sequential()
 model.add(Dense(100, input_dim=33, activation='relu', kernel_initializer = 'normal'))
 model.add(Dropout(0.6))
@@ -314,6 +316,9 @@ print(X.shape)
 print(Y.shape)
 
 hist = model.fit(X_train, Y_train, validation_data=(X_test, Y_test), epochs=50, batch_size=100, verbose=1)
+
+# loss 값 찍어보기
+print("\n Test loss : %.4f" % (model.evaluate(X_test, Y_test)[0]))
 
 #그래프 그려보기
 
