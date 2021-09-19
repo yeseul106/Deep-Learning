@@ -93,6 +93,7 @@ def gan_train(epoch, batch_size, saving_interval):
 
     x_train = np.array(x_train)
     x_train = x_train.reshape(len(x_train), 100, 100, 1)
+    print("x_train_shape:",x_train.shape)
     #print("float:",  x_train)
     true = np.ones((batch_size, 1))
     fake = np.zeros((batch_size, 1))
