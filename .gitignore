@@ -1,0 +1,14 @@
+nunpy_test1/.idea/inspectionProfiles/Project_Default.xml
+nunpy_test1/.idea/inspectionProfiles/profiles_settings.xml
+*.xml
+*.jpg
+nunpy_test1/.idea/.gitignore
+nunpy_test1/numpy_1.1.1.py
+kaggle_Blue_Book_for_Bulldozers/.idea/kaggle_Blue_Book_for_Bulldozers.iml
+*.csv
+kaggle_FlowerClassification/.idea/.gitignore
+kaggle_FlowerClassification/캐글 조예슬 개인 과제_2 보고서.hwp
+kaggle_Blue_Book_for_Bulldozers/.idea/.gitignore
+Daum_Comment_ Crawling/.idea/.gitignore
+convert_tflite/models/variables/variables.data-00000-of-00001
+convert_tflite/models/variables/variables.index
